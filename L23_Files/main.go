@@ -9,7 +9,7 @@ func main() {
 	f, err := os.Open("example.txt")
 	if err != nil {
 		// Log the error
-		panic(err)
+		panic(err) // abhi kuch nhi ho sakta hai : panic mode
 	}
 	
 	fileInfo, err := f.Stat()
@@ -18,9 +18,9 @@ func main() {
 		panic(err)
 	}
 
-	fmt.Println(fileInfo.Name())
-	fmt.Println(fileInfo.IsDir())
-	fmt.Println(fileInfo.Size())
-	fmt.Println(fileInfo.Mode())
-	fmt.Println(fileInfo.ModTime())
+	fmt.Println("File Name :", fileInfo.Name())
+	fmt.Println("IsFolder :", fileInfo.IsDir())
+	fmt.Println("Size :", fileInfo.Size())
+	fmt.Println("Mode :", fileInfo.Mode())
+	fmt.Println("Modification time :", fileInfo.ModTime())
 }
