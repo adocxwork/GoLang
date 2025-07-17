@@ -14,12 +14,12 @@ func main() {
 
 	buf := make([]byte, 10)
 
-	d, err := f.Read(buf) // returns buffer size & error
+	bufSize, err := f.Read(buf) // returns buffer size & error
 	if err != nil {
 		panic(err)
 	}
 
 	for i := 0; i < len(buf); i++ {
-		fmt.Println("Data :", d, string(buf[i]))
+		fmt.Println("Data :", bufSize, string(buf[i]))
 	}
 }

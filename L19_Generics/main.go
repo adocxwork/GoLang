@@ -12,6 +12,7 @@ import "fmt"
 // 	}
 // }
 
+// comparable ->  it must support the == and != operators.
 
 func printSlice[T comparable, V string](items []T, name V) { //
 	for _, item := range items {
