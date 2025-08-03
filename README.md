@@ -12,7 +12,7 @@ This repository contains Go code for various topics, including variables, loops,
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/repo-name.git
+   git clone https://github.com/adocxwork/GoLang.git
    ```
 
 2. Browse through the code files to explore different Go topics.
