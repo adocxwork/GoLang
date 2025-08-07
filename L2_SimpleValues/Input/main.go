@@ -12,6 +12,7 @@ func main() {
 	// fmt.Scan(&name) // single word input
 	// fmt.Println("Hello Mr.", name)
 
+	// Reading Sentences
 	reader := bufio.NewReader(os.Stdin)
 	fullName, _ := reader.ReadString('\n')
 	fmt.Println("Full Name :", fullName)
